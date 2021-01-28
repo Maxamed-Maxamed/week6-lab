@@ -9,15 +9,12 @@ function likeIt(){
   alert("thank you for like it!! ;)")
 }
 
-function showHide(){
-  let readMoreDive = document.getElementById("readmore!!"); 
-  readMoreDive.style.color= "blue";
-  if(readMoreDive.style.display == "block")
-    {
-      readMoreDive.style.display = "none";
-    }
-  else{ 
-    readMoreDive.style.display = "block";
+function showHide() {
+  let readMoreDiv = document.getElementById("readmore");
+  if (readMoreDiv.style.display === "block") {
+    readMoreDiv.style.display = "none";
+  } else {
+    readMoreDiv.style.display = "block";
   }
 }
 
