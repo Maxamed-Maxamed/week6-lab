@@ -9,5 +9,6 @@ function hideWelcome()
   let welcomeuser = prompt("what is your name?");
   let welcomeuserid= document.getElemnetById("welcome user"); 
   welcomeuserid.style.display = "block";
-  document.getElementById("welcomeuser")
+  document.getElementById("welcomeuser").innerHTML = '<p> Hello,' 
+  welcomeuserid.style
 }
