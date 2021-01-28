@@ -3,3 +3,8 @@
 
 // prints "hi" in the browser's dev tools console
 console.log("Hello from Wed App Dev Lab One !!!");
+
+function hideWelcome()
+{
+  
+}
