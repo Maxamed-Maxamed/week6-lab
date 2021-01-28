@@ -18,5 +18,6 @@ function showHide() {
   }
 }
 
+let message = document.getElementById('welcomeuser').innerHTML;
 
 
