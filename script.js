@@ -4,11 +4,24 @@
 // prints "hi" in the browser's dev tools console
 console.log("Hello from Wed App Dev Lab One !!!");
 
-function hidewelcome(){
+function likeIt(){
   
-  let userName = prompt("what is your name?"); 
-  
-  let welcomeUserName = 
+  alert("thank you for like it!! ;)")
 }
+
+
+function showHide(){
+  
+  let readMoreDive = document.getElementById("readmore!!"); 
+  readMoreDive.style.color= "blue";
+  if(readMoreDive.style.display == "block")
+    {
+      readMoreDive.style.display = "none";
+    }
+  else{ 
+    readMoreDive.style.display = "block";
+  }
+}
+
 
 
