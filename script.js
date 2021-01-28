@@ -9,9 +9,7 @@ function likeIt(){
   alert("thank you for like it!! ;)")
 }
 
-
 function showHide(){
-  
   let readMoreDive = document.getElementById("readmore!!"); 
   readMoreDive.style.color= "blue";
   if(readMoreDive.style.display == "block")
