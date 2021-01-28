@@ -4,11 +4,11 @@
 // prints "hi" in the browser's dev tools console
 console.log("Hello from Wed App Dev Lab One !!!");
 
-function hideWelcome()
-{
-  let welcomeuser = prompt("what is your name?");
-  let welcomeuserid= document.getElemnetById("welcome user"); 
-  welcomeuserid.style.display = "block";
-  document.getElementById("welcomeuser").innerHTML = '<p> Hello,' 
-  welcomeuserid.style
+function hidewelcome(){
+  
+  let userName = prompt("what is your name?"); 
+  
+  let welcomeUserName = 
 }
+
+
