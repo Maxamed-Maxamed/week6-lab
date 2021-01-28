@@ -18,6 +18,12 @@ function showHide() {
   }
 }
 
-let message = document.getElementById('welcomeuser').innerHTML;
 
+function welcomeUser() {
+  let username = prompt("What's your name?");
+  let welcomeUserDiv = document.getElementById("welcomeuser");
+  welcomeUserDiv.style.display = "block";
+  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! </p>';
+  welcomeUserDiv.style.cursor = "pointer";
+}
 
