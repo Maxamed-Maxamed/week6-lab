@@ -44,8 +44,14 @@ const sonatas = {
     }
   ],
   getRating() {
-  let userRating = prompt("Rate this collection (from 1 to 5 stars)");
-  $("#rating").html("You gave a rating of: " + userRating);
+  let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
+
+  if (userRating>5 || userRating<1 || isNaN(userRating)){
+    alert("Try again with a number between 1 and 5!");
+  }
+  else{
+    $("#rating").html("You gave a rating of: " + userRating);
+  }
 }
 };
 
