@@ -41,6 +41,10 @@ const sonatas = {
     {
       title: 'Piano Sonata No. 10',
       artist: 'Beethoven',
+    },
+    {
+      title: 'Piano Sonata No. 11',
+      artist: 'Beethoven',
     }
   ],
   getRating() {
