@@ -56,7 +56,10 @@ const sonatas = {
   else{
     $("#rating").html("You gave a rating of: " );
     
-    $()
+    for(userRating = 0; userRating < 5; userRating++) {
+       $('#rating').append("<i class = 'yellow star icon'></i>")
+    }
+   
   }
 }
 };
