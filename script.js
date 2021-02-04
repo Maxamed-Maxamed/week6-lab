@@ -54,7 +54,9 @@ const sonatas = {
     alert("Try again with a number between 1 and 5!");
   }
   else{
-    $("#rating").html("You gave a rating of: " + userRating);
+    $("#rating").html("You gave a rating of: " );
+    
+    $()
   }
 }
 };
@@ -81,7 +83,7 @@ $(document).ready(function(){
   $("#tableoutput").append("</tbody></table>");
   $("#tableoutput").append('<p><span id="rating"> </span></p>');
   
-  $("#tableoutput").append('<button class="ui blue button" onclick="sonatas.getRating()"> Rate it! <i class="star icon"></i></button>');
+  $("#tableoutput").append('<button class="ui blue button" onclick="sonatas.getRating()"> Rate it! <i class="star icon"> </i></button>');
 
 });
 
