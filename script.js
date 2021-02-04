@@ -45,10 +45,15 @@ const sonatas = {
   ]
 };
 
-
-for (let i in sonatas.songs){
-  document.write("Song: " + sonatas.songs[i].title + " Artist: " + sonatas.songs[i].artist + "<br>");
+getRating(){
+  let userRating = prompt("Rate ");
+  
 }
+
+
+// for (let i in sonatas.songs){
+//   document.write("Song: " + sonatas.songs[i].title + " Artist: " + sonatas.songs[i].artist + "<br>");
+// }
 
 
 $(document).ready(function(){
@@ -62,6 +67,9 @@ $(document).ready(function(){
   }
 
   $("#tableoutput").append("</tbody></table>");
+  $("#tableoutput").append('<p><span id="rating"> </span></p>');
+  
+  $("#tableoutput").append('<button class="ui blue button" onclick="sonatas.getRating()"> Rate it! <i class="star icon"></i></button>');
 
 });
 
