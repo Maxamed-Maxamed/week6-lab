@@ -42,13 +42,15 @@ const sonatas = {
       title: 'Piano Sonata No. 10',
       artist: 'Beethoven',
     }
-  ]
+  ],
+  getRating() {
+  let userRating = prompt("Rate this collection (from 1 to 5 stars)");
+  $("#rating").html("You gave a rating of: " + userRating);
+}
 };
 
-getRating(){
-  let userRating = prompt("Rate ");
-  
-}
+
+
 
 
 // for (let i in sonatas.songs){
