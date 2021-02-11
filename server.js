@@ -4,6 +4,7 @@
 // import all required modules
 const express = require("express");
 const logger = require('./utils/logger');
+const exphbs = require('express-handlebars');
 
 // initialise project
 const app = express();
@@ -15,6 +16,12 @@ app.use(express.static("public"));
 app.get("/", function(request, response) {
   response.sendFile(__dirname + "/index.html");
 });
+// use handlebars as view engine
+app.engine('.hbs', exphbs({
+  extname: '.hbs',
+  defaultLayout: 'main',
+}));
+app.set('view engine', '.hbs');
 
 // // listen for requests :)
 // const listener = app.listen(process.env.PORT, function() {
@@ -24,9 +31,9 @@ app.get("/", function(request, response) {
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info('Your app is listening on port ' + listener.address().port);
+  logger.info(`glitch-playlist1 started on port ${listener.address().port}`);
 });
 
 
-"express-handlebars": "^3.1.0"
+
 
