@@ -12,10 +12,7 @@ const app = express();
 // static files output to public folder
 app.use(express.static("public"));
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/index.html");
-});
+
 // use handlebars as view engine
 app.engine('.hbs', exphbs({
   extname: '.hbs',
