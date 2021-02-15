@@ -12,7 +12,7 @@ const about = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: "Welcome to the Playlist App!"
+      title: "Welcome to the about App!"
     };
 
     // render the start view and pass through the data
