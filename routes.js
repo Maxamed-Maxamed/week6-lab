@@ -11,6 +11,6 @@ const dashboard = require("./controllers/dashboard.js");
 // connect routes to controllers
 router.get("/", start.index);
 router.get("/dashboard", dashboard.index);
-router.get("/about", about.index);
+router.get("/about",about.index );
 // export router module
 module.exports = router;
