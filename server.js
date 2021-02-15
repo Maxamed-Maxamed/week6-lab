@@ -29,8 +29,8 @@ app.set("view engine", ".hbs");
 // });
 // listen for requests :)
 // import routes file and use this for routing
-const routes = require('./routes');
-app.use('/', routes);
+// import routes file and use this for routing
+
 
 
 // listen for requests :)
