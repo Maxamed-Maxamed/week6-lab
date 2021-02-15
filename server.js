@@ -6,9 +6,11 @@ const express = require("express");
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
 
+
 // initialise project
 const app = express();
-
+const routes = require('./routes');
+app.use('/', routes);
 // static files output to public folder
 app.use(express.static("public"));
 

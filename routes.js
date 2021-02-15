@@ -14,4 +14,3 @@ router.get('/dashboard', dashboard.index);
 
 // export router module
 module.exports = router;
-

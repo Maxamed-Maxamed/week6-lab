@@ -3,7 +3,6 @@
 // import all required modules
 const logger = require("../utils/logger");
 
-
 // create start object
 const start = {
   // index method - responsible for creating and rendering the view
