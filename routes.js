@@ -1,21 +1,18 @@
-// use javascript in strict mode
 'use strict';
 
-// import all required modules
-const express = require("express");
+// import express and initialise router
+const express = require('express');
+const router = express.Router();
 
-// initialise project
-const app = express();
+// import controllers
+const start = require('./controllers/start.js');
+const dashboard = require('./controllers/dashboard.js');
+const about = require('./controllers/about.js');
 
-// static files output to public folder
-app.use(express.static("public"));
+// connect routes to controllers
+router.get('/', start.index);
+router.get('/dashboard', dashboard.index);
+router.get('/about', about.index);
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/index.html");
-});
-
-// listen for requests :)
-const listener = app.listen(process.env.PORT, function() {
-  console.log("Your app is listening on port " + listener.address().port);
-});
+// export router module
+module.exports = router;
