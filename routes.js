@@ -3,12 +3,19 @@
 // import express and initialise router
 const express = require('express');
 const router = express.Router();
-
+const playlist = require('./controllers/playlist.js');
 // import controllers
 const start = require('./controllers/start.js');
 const dashboard = require('./controllers/dashboard.js');
-const about = require('./controllers/about.js');
-const playlist = require('./controllers/playlist.js');
+const about = {
+  index(request, response) {
+    const viewData = {
+      title: 'About Playlist Maker',
+    };
+    response.render('about', viewData);
+  },
+}
+
 
 // connect routes to controllers
 router.get('/', start.index);
