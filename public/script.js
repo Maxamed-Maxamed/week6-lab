@@ -93,6 +93,7 @@ function welcomeUser() {
 //     '<button class="ui blue button" onclick="sonatas.getRating()"> Rate it! <i class="star icon"> </i></button>'
 //   );
 // });
+
 function getRating() {
   let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
   if (userRating>5 || userRating<1 || isNaN(userRating)){
@@ -105,3 +106,4 @@ function getRating() {
     }
   }
 }
+
