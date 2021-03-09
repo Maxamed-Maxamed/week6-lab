@@ -107,4 +107,5 @@ function getRating() {
   }
 }
 $(".delsong").click(() => confirm('Really delete this song?'))
-$(".deleteplaylist").click(() => confirm('Really delete this song?'))
+$(".delplaylist").click(() => confirm('Really delete this playlist?'))
+

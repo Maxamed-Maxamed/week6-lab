@@ -17,11 +17,20 @@ const dashboard = {
       title: 'Playlist App Dashboard',
       playlists: playlistStore.getAllPlaylists(),
     };
+    
+    
 
     // render the dashboard view and pass through the data
     logger.info('about to render', viewData.playlists);
     response.render('dashboard', viewData);
     
+  },
+  
+  deletePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
   },
 };
 
