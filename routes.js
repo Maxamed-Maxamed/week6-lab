@@ -7,14 +7,8 @@ const playlist = require('./controllers/playlist.js');
 // import controllers
 const start = require('./controllers/start.js');
 const dashboard = require('./controllers/dashboard.js');
-const about = {
-  index(request, response) {
-    const viewData = {
-      title: 'About Playlist Maker',
-    };
-    response.render('about', viewData);
-  },
-};
+const about = require('./controllers/about.js');
+  
 
 
 // connect routes to controllers

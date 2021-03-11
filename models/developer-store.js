@@ -1,12 +1,16 @@
 "use strict";
 
+const JsonStore = require('./json-store');
+
 const developerStore = {
-  // import the playlist collection object
-  developers: require("./developer-store.json").developers,
+
+  store: new JsonStore('./models/developer-store.json', { developers: [] }),
+  collection: 'developers',
+
 
   // function to get all of the playlists
   getAllDevelopers() {
-    return this.developers;
+     return this.store.findAll(this.collection);
   }
 };
 
