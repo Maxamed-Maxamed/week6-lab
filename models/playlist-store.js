@@ -27,6 +27,11 @@ removePlaylist(id) {
     const playlist = this.getPlaylist(id);
     playlist.songs.push(song);
   },
+  
+  addPlaylist(playlist) {
+  this.playlistCollection.push(playlist);
+},
+  
 };
 
 
