@@ -27,3 +27,6 @@ app.use('/', routes);
 const listener = app.listen(process.env.PORT || 4000, function () {
   logger.info('Your app is listening on port ' + listener.address().port);
 });
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false, }));
