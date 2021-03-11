@@ -1,7 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const uuid = require('uuid');
+const uuid = require("uuid");
 const playlistStore = require("../models/playlist-store");
 
 const playlist = {
@@ -22,14 +22,16 @@ const playlist = {
     playlistStore.removeSong(playlistId, songId);
     response.redirect("/playlist/" + playlistId);
   },
-  
+
   addSong(request, response) {
     const playlistId = request.params.id;
     const playlist = playlistStore.getPlaylist(playlistId);
     const newSong = {
       id: uuid(),
       title: request.body.title,
-      artist: request.body.artist
+      artist: request.body.artist,
+      genre: request.body.genre,
+      duration: request.body.duration,
     };
     playlistStore.addSong(playlistId, newSong);
     response.redirect("/playlist/" + playlistId);
