@@ -14,7 +14,7 @@ const about = {
     };
     response.render('about', viewData);
   },
-}
+};
 
 
 // connect routes to controllers

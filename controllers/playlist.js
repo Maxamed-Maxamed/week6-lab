@@ -31,7 +31,7 @@ const playlist = {
       title: request.body.title,
       artist: request.body.artist,
       genre: request.body.genre,
-      duration: request.body.duration,
+      duration: request.body.duration
     };
     playlistStore.addSong(playlistId, newSong);
     response.redirect("/playlist/" + playlistId);
